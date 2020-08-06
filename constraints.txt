@@ -1,0 +1,4 @@
+Following are some of the precautions to be taken while entering new data in the txt file:
+
+1.There should be no space between name of user and his phone number,however there can be space between the first name and last name.
+2.Name should be entered in the the uppercase in the txt file.
