@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <ctype.h>
 char* search_number(FILE *poi,char *i,int k) //function for searching number against the number
   { int q=0;
     char p[200];
@@ -49,9 +49,11 @@ int main()
 	 {printf("Enter the name\n");
 	  scanf("\n");
 	  scanf("%[^\n]*c",s);
-	  char* i;
-	  i=strupr(s);
       int k=strlen(s) ;
+      char i[k+1];
+       i[k]='\0';
+      for(int j=0;j<k;j++)
+         i[j]=toupper(s[j]);    // change made here
       char* p=search_number(poi,i,k);
       printf("%s",p);
       }
